@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ResistoresController">
+   <children>
+      <Label text="Resistores">
+         <font>
+            <Font name="Arial Black" size="24.0" />
+         </font>
+         <VBox.margin>
+            <Insets left="10.0" top="10.0" />
+         </VBox.margin>
+      </Label>
+      <Label text="O que você deseja calcular?">
+         <font>
+            <Font name="Arial Black" size="24.0" />
+         </font>
+         <VBox.margin>
+            <Insets left="90.0" top="5.0" />
+         </VBox.margin>
+      </Label>
+      <MenuButton mnemonicParsing="false" prefHeight="33.0" prefWidth="291.0" text="Selecione aqui">
+        <items>
+          <MenuItem mnemonicParsing="false" onAction="#onMenuResistoresEmSerieAction" text="Resistores em séries" />
+          <MenuItem mnemonicParsing="false" onAction="#onMenuResistoresEmParaleloAction" text="Resistores em paralelo" />
+            <MenuItem mnemonicParsing="false" onAction="#onMenuItemUriAction" text="1ª lei de Ohm" />
+            <MenuItem mnemonicParsing="false" onAction="#onMenuItemRolaAction" text="2ª lei de Ohm" />
+        </items>
+         <VBox.margin>
+            <Insets left="125.0" top="20.0" />
+         </VBox.margin>
+      </MenuButton>
+   </children>
+</VBox>
